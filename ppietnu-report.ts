@@ -72,13 +72,41 @@
     </src-comment>
   </active*>
 
-  <assign|chapter|<macro|title|<assign|par-first|0><next-chapter><chapter-clean><toc-main-2|<arg|title>><with|font|simhei|font-size|1.8fs|<htab|0>\<#7B2C\><space|0.2fs><value|chapter-nr><space|0.2fs>\<#7AE0\>\<#3000\><arg|title><htab|0>><assign|par-first|2fs>>>
+  <assign|sectional-short-style|<macro|false>>
 
-  <assign|chapter*|<macro|title|<assign|par-first|0><chapter-clean><toc-main-2|title><with|font|simhei|font-size|1.8fs|<htab|0><arg|title><htab|0><assign|par-first|2fs>>>>
+  <assign|sectional-sep|<space|1fs>>
 
-  <assign|section|<macro|title|<assign|par-first|0><next-section><section-clean><toc-normal-1|<arg|title>><with|font|simhei|font-size|1.4fs|<with|font|roman|<value|chapter-nr>.<value|section-nr>>\<#3000\><arg|title>><assign|par-first|2fs>>>
+  <assign|chapter-title|<\macro|name>
+    <sectional-short|<with|font|simhei|font-size|1.7fs|<arg|name>>>
+  </macro>>
 
-  <assign|subsection|<macro|title|<assign|par-first|0><next-subsection><subsection-clean><toc-normal-2|<arg|title>><with|font|simhei|font-size|1.4fs|<with|font|roman|<value|chapter-nr>.<value|section-nr>.<value|subsection-nr>>\<#3000\><arg|title>><assign|par-first|2fs>>>
+  <assign|chapter-numbered-title|<\macro|title>
+    <chapter-title|\<#7B2C\><space|0.2fs><the-chapter><space|0.2fs>\<#7AE0\><chapter-sep><arg|title>>
+  </macro>>
+
+  <assign|chapter-c|<\macro|title>
+    <htab|0><chapter|<arg|title>><htab|0>
+  </macro>>
+
+  <assign|section-title|<\macro|name>
+    <sectional-short|<with|font|simhei|font-size|1.5fs|<arg|name>>>
+  </macro>>
+
+  <assign|section-numbered-title|<\macro|title>
+    <\section-title>
+      <with|font|roman|<the-section>><section-sep><arg|title>
+    </section-title>
+  </macro>>
+
+  <assign|subsection-title|<\macro|name>
+    <sectional-short|<with|font|simhei|font-size|1.5fs|<arg|name>>>
+  </macro>>
+
+  <assign|subsection-numbered-title|<\macro|title>
+    <\subsection-title>
+      <with|font|roman|<the-subsection>><subsection-sep><arg|title>
+    </subsection-title>
+  </macro>>
 
   <\active*>
     <\src-comment>
@@ -122,9 +150,3 @@
     <associate|preamble|true>
   </collection>
 </initial>
-
-<\references>
-  <\collection>
-    <associate|auto-1|<tuple|1|?|..\\..\\..\\..\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_23.tm>>
-  </collection>
-</references>

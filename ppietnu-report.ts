@@ -77,7 +77,7 @@
   <assign|sectional-sep|<space|1fs>>
 
   <assign|chapter-title|<\macro|name>
-    <sectional-short|<with|font|simhei|font-size|1.7fs|<arg|name>>>
+    <sectional-short|<with|font|simhei|font-size|1.8fs|<arg|name>>>
   </macro>>
 
   <assign|chapter-numbered-title|<\macro|title>
@@ -89,7 +89,7 @@
   </macro>>
 
   <assign|section-title|<\macro|name>
-    <sectional-short|<with|font|simhei|font-size|1.5fs|<arg|name>>>
+    <sectional-short|<with|font|simhei|font-size|1.4fs|<arg|name>>>
   </macro>>
 
   <assign|section-numbered-title|<\macro|title>
@@ -99,7 +99,7 @@
   </macro>>
 
   <assign|subsection-title|<\macro|name>
-    <sectional-short|<with|font|simhei|font-size|1.5fs|<arg|name>>>
+    <sectional-short|<with|font|simhei|font-size|1.4fs|<arg|name>>>
   </macro>>
 
   <assign|subsection-numbered-title|<\macro|title>

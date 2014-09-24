@@ -77,7 +77,7 @@
   <assign|sectional-sep|<space|1fs>>
 
   <assign|chapter-title|<\macro|name>
-    <sectional-short|<with|font|simhei|font-size|1.8fs|<arg|name>>>
+    <with|par-first|0|<with|font|simhei|font-size|1.8fs|<arg|name>>>
   </macro>>
 
   <assign|chapter-numbered-title|<\macro|title>
@@ -89,7 +89,7 @@
   </macro>>
 
   <assign|section-title|<\macro|name>
-    <sectional-short|<with|font|simhei|font-size|1.4fs|<arg|name>>>
+    <with|par-first|0|<with|font|simhei|font-size|1.4fs|<arg|name>>>
   </macro>>
 
   <assign|section-numbered-title|<\macro|title>
@@ -99,7 +99,7 @@
   </macro>>
 
   <assign|subsection-title|<\macro|name>
-    <sectional-short|<with|font|simhei|font-size|1.4fs|<arg|name>>>
+    <with|par-first|0|<with|font|simhei|font-size|1.4fs|<arg|name>>>
   </macro>>
 
   <assign|subsection-numbered-title|<\macro|title>
@@ -142,7 +142,17 @@
     </src-comment>
   </active*>
 
-  <assign|display-equation|<quote|<value|chapter-nr>>.<quote|<value|equation-nr>>>
+  <assign|display-equation|<macro|nr|<chapter-prefix><arg|nr>>>
+
+  <\active*>
+    <\src-comment>
+      Associate \| Page
+    </src-comment>
+  </active*>
+
+  <associate|page-top|2.5cm>
+
+  <associate|page-bot|2.8cm>
 </body>
 
 <\initial>

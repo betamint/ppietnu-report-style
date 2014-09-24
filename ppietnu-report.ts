@@ -77,19 +77,19 @@
   <assign|sectional-sep|<space|1fs>>
 
   <assign|chapter-title|<\macro|name>
-    <with|par-first|0|<with|font|simhei|font-size|1.8fs|<arg|name>>>
+    <with|font|simhei|font-size|1.8fs|<arg|name>>
   </macro>>
 
   <assign|chapter-numbered-title|<\macro|title>
     <chapter-title|\<#7B2C\><space|0.2fs><the-chapter><space|0.2fs>\<#7AE0\><chapter-sep><arg|title>>
   </macro>>
 
-  <assign|chapter-c|<\macro|title>
-    <htab|0><chapter|<arg|title>><htab|0>
+  <assign|chapter-x|<\macro|title>
+    <with|par-first|0|<htab|0><chapter|<arg|title>><htab|0>>
   </macro>>
 
   <assign|section-title|<\macro|name>
-    <with|par-first|0|<with|font|simhei|font-size|1.4fs|<arg|name>>>
+    <with|font|simhei|font-size|1.4fs|<arg|name>>
   </macro>>
 
   <assign|section-numbered-title|<\macro|title>
@@ -98,14 +98,22 @@
     </section-title>
   </macro>>
 
+  <assign|section-x|<\macro|title>
+    <with|par-first|0|<section|<arg|title>>>
+  </macro>>
+
   <assign|subsection-title|<\macro|name>
-    <with|par-first|0|<with|font|simhei|font-size|1.4fs|<arg|name>>>
+    <with|font|simhei|font-size|1.4fs|<arg|name>>
   </macro>>
 
   <assign|subsection-numbered-title|<\macro|title>
     <\subsection-title>
       <with|font|roman|<the-subsection>><subsection-sep><arg|title>
     </subsection-title>
+  </macro>>
+
+  <assign|subsection-x|<\macro|title>
+    <with|par-first|0|<subsection|<arg|title>>>
   </macro>>
 
   <\active*>

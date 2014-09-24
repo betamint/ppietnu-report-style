@@ -48,9 +48,9 @@
 
   <assign|page-number|<macro|<quote|<number|<page-the-page>|Roman>>>>
 
-  <assign|page-odd-footer|<htab|5mm><with|font|roman|<page-number>><htab|5mm>>
+  <assign|page-odd-footer|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>>
 
-  <assign|page-even-footer|<htab|5mm><with|font|roman|<page-number>><htab|5mm>>
+  <assign|page-even-footer|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>>
 
   <\active*>
     <\src-comment>
@@ -62,9 +62,9 @@
 
   <assign|page-number|<macro|<quote|<page-the-page>>>>
 
-  <assign|page-odd-footer|<htab|5mm><with|font|roman|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>
+  <assign|page-odd-footer|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>
 
-  <assign|page-even-footer|<htab|5mm><with|font|roman|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>
+  <assign|page-even-footer|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>
 
   <\active*>
     <\src-comment>
@@ -146,9 +146,11 @@
 
   <\active*>
     <\src-comment>
-      Associate \| Page
+      Page Margin
     </src-comment>
   </active*>
+
+  <assign|page-foot-sep|5mm>
 
   <associate|page-top|2.5cm>
 

@@ -108,7 +108,7 @@
 
   <assign|par-first|2fs>
 
-  <assign|par-sep|0.5fs>
+  <assign|par-sep|0.9fs>
 
   <assign|par-par-sep|0>
 

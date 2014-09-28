@@ -5,7 +5,7 @@
 <\body>
   <\active*>
     <\src-title>
-      <src-package|ppietnu-report|0.1>
+      <src-package|ppietnu-report|1.0>
 
       <\src-purpose>
         Standard styles for report of PPIETNU (Planning Project of Innovation
@@ -21,6 +21,8 @@
       </src-license>
     </src-title>
   </active*>
+
+  <use-package|std|env|section-base|>
 
   <\active*>
     <\src-comment>
@@ -40,31 +42,17 @@
 
   <\active*>
     <\src-comment>
-      Front Page Styles \| Header, Footer
+      Page Styles \| Header, Footer
     </src-comment>
   </active*>
 
-  <set-page-number|1>
+  <assign|header-primary|<macro|>>
 
-  <assign|page-number|<macro|<quote|<number|<page-the-page>|Roman>>>>
+  <assign|header-secondary|<macro|>>
 
-  <assign|page-odd-footer|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>>
+  <assign|front-begin|<macro|<set-page-number|1><assign|page-number|<macro|<quote|<number|<page-the-page>|Roman>>>><assign|page-odd-footer|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>><assign|page-even-footer|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>>>>
 
-  <assign|page-even-footer|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>>
-
-  <\active*>
-    <\src-comment>
-      Content Page Styles \| Header, Footer
-    </src-comment>
-  </active*>
-
-  <set-page-number|1>
-
-  <assign|page-number|<macro|<quote|<page-the-page>>>>
-
-  <assign|page-odd-footer|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>
-
-  <assign|page-even-footer|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>
+  <assign|main-begin|<macro|<set-page-number|1><assign|page-number|<macro|<quote|<page-the-page>>>><assign|page-odd-footer|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>><assign|page-even-footer|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>>>
 
   <\active*>
     <\src-comment>
@@ -74,31 +62,23 @@
 
   <assign|sectional-short-style|<macro|false>>
 
+  <assign|sectional-centered|<macro|name|<wide-centered|<arg|name><no-page-break>>>>
+
+  <assign|sectional-normal|<macro|name|<wide-normal|<arg|name><no-page-break>>>>
+
   <assign|sectional-sep|<space|1fs>>
 
-  <assign|chapter-title|<\macro|name>
-    <sectional-centered|<with|font|simhei|font-size|1.8fs|<arg|name>>>
-  </macro>>
+  <assign|chapter-title|<macro|name|<style-with|src-compact|none|<sectional-centered|<vspace*|0.8fs><with|font|simhei|font-size|1.8fs|<arg|name>><vspace|0.5fs>>>>>
 
-  <assign|chapter-numbered-title|<\macro|title>
-    <chapter-title|\<#7B2C\><space|0.2fs><the-chapter><space|0.2fs>\<#7AE0\><chapter-sep><arg|title>>
-  </macro>>
+  <assign|chapter-numbered-title|<macro|title|<style-with|src-compact|none|<chapter-title|\<#7B2C\><space|0.2fs><the-chapter><space|0.2fs>\<#7AE0\><chapter-sep><arg|title>>>>>
 
-  <assign|section-title|<\macro|name>
-    <sectional-normal|<with|font|simhei|font-size|1.4fs|<arg|name>>>
-  </macro>>
+  <assign|section-title|<macro|name|<style-with|src-compact|none|<sectional-normal|<with|font|simhei|font-size|1.4fs|<arg|name>>>>>>
 
-  <assign|section-numbered-title|<\macro|title>
-    <section-title|<style-with|src-compact|all|<with|font|roman|<the-section>>><section-sep><arg|title>>
-  </macro>>
+  <assign|section-numbered-title|<macro|title|<style-with|src-compact|none|<section-title|<with|font|roman|<the-section>><section-sep><arg|title>>>>>
 
-  <assign|subsection-title|<\macro|name>
-    <sectional-normal|<with|font|simhei|font-size|1.4fs|<arg|name>>>
-  </macro>>
+  <assign|subsection-title|<macro|name|<style-with|src-compact|none|<sectional-normal|<with|font|simhei|font-size|1.4fs|<arg|name>>>>>>
 
-  <assign|subsection-numbered-title|<\macro|title>
-    <subsection-title|<with|font|roman|<the-subsection>><subsection-sep><arg|title>>
-  </macro>>
+  <assign|subsection-numbered-title|<macro|title|<style-with|src-compact|none|<subsection-title|<with|font|roman|<the-subsection>><subsection-sep><arg|title>>>>>
 
   <\active*>
     <\src-comment>
@@ -144,9 +124,9 @@
 
   <assign|page-foot-sep|5mm>
 
-  <associate|page-top|2.5cm>
+  <assign|page-top|2.5cm>
 
-  <associate|page-bot|2.8cm>
+  <assign|page-bot|2.8cm>
 </body>
 
 <\initial>

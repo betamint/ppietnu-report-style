@@ -5,7 +5,7 @@
 <\body>
   <\active*>
     <\src-title>
-      <src-package|ppietnu-report|1.0>
+      <src-package|ppietnu-report|1.1>
 
       <\src-purpose>
         Standard styles for report of PPIETNU (Planning Project of Innovation
@@ -80,6 +80,8 @@
 
   <assign|subsection-numbered-title|<macro|title|<style-with|src-compact|none|<subsection-title|<with|font|roman|<the-subsection>><subsection-sep><arg|title>>>>>
 
+  <assign|chapter-clean|<macro|<reset-equation><reset-figure>>>
+
   <\active*>
     <\src-comment>
       Content Styles \| Paragraph
@@ -115,6 +117,18 @@
   </active*>
 
   <assign|display-equation|<macro|nr|<chapter-prefix><arg|nr>>>
+
+  <\active*>
+    <\src-comment>
+      Content Styles \| Figure
+    </src-comment>
+  </active*>
+
+  <assign|figure-sep|<space|1fs>>
+
+  <assign|figure-name|<macro|name|<arg|name>>>
+
+  <assign|display-figure|<macro|nr|<chapter-prefix><arg|nr>>>
 
   <\active*>
     <\src-comment>

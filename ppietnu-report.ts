@@ -130,6 +130,8 @@
 
   <assign|display-figure|<macro|nr|<chapter-prefix><arg|nr>>>
 
+  <assign|display-table|<macro|nr|<chapter-prefix><arg|nr>>>
+
   <\active*>
     <\src-comment>
       Page Margin

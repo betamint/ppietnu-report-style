@@ -80,7 +80,7 @@
 
   <assign|subsection-numbered-title|<macro|title|<style-with|src-compact|none|<subsection-title|<with|font|roman|<the-subsection>><subsection-sep><arg|title>>>>>
 
-  <assign|chapter-clean|<macro|<reset-equation><reset-figure>>>
+  <assign|chapter-clean|<macro|<reset-section><reset-equation><reset-figure>>>
 
   <\active*>
     <\src-comment>

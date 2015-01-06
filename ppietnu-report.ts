@@ -72,11 +72,11 @@
 
   <assign|chapter-numbered-title|<macro|title|<style-with|src-compact|none|<chapter-title|\<#7B2C\><space|0.2fs><the-chapter><space|0.2fs>\<#7AE0\><chapter-sep><arg|title>>>>>
 
-  <assign|section-title|<macro|name|<style-with|src-compact|none|<sectional-normal|<with|font|simhei|font-size|1.4fs|<arg|name>>>>>>
+  <assign|section-title|<macro|name|<style-with|src-compact|none|<sectional-normal|<vspace*|0.5fs><with|font|simhei|font-size|1.4fs|<arg|name>><vspace|0.5fs>>>>>
 
   <assign|section-numbered-title|<macro|title|<style-with|src-compact|none|<section-title|<with|font|roman|<the-section>><section-sep><arg|title>>>>>
 
-  <assign|subsection-title|<macro|name|<style-with|src-compact|none|<sectional-normal|<with|font|simhei|font-size|1.4fs|<arg|name>>>>>>
+  <assign|subsection-title|<macro|name|<style-with|src-compact|none|<sectional-normal|<vspace*|0.5fs><with|font|simhei|font-size|1.2fs|<arg|name>><vspace|0.5fs>>>>>
 
   <assign|subsection-numbered-title|<macro|title|<style-with|src-compact|none|<subsection-title|<with|font|roman|<the-subsection>><subsection-sep><arg|title>>>>>
 

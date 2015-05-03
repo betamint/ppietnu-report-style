@@ -68,7 +68,7 @@
 
   <assign|sectional-sep|<space|1fs>>
 
-  <assign|chapter-title|<macro|name|<style-with|src-compact|none|<sectional-centered|<vspace*|0.8fs><with|font|simhei|font-size|1.8fs|<arg|name>><vspace|0.5fs>>>>>
+  <assign|chapter-title|<macro|name|<style-with|src-compact|none|<new-page*><style-with|src-compact|none|<sectional-centered|<vspace*|0.8fs><with|font|simhei|font-size|1.8fs|<arg|name>><vspace|0.5fs>>>>>>
 
   <assign|chapter-numbered-title|<macro|title|<style-with|src-compact|none|<chapter-title|\<#7B2C\><space|0.2fs><the-chapter><space|0.2fs>\<#7AE0\><chapter-sep><arg|title>>>>>
 

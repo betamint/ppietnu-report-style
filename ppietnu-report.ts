@@ -42,9 +42,15 @@
 
   <\active*>
     <\src-comment>
-      Page Styles \| Header, Footer
+      Page Styles \| Margin, Header, Footer
     </src-comment>
   </active*>
+
+  <assign|page-foot-sep|5mm>
+
+  <assign|page-top|2.5cm>
+
+  <assign|page-bot|2.8cm>
 
   <assign|header-primary|<macro|>>
 
@@ -108,7 +114,7 @@
     </src-comment>
   </active*>
 
-  <assign|aligned-item|<macro|name|<with|par-first|<minus|<item-hsep>>|<yes-indent>><resize|<arg|name>|<minus|1r|<minus|<item-hsep>|0.5fn>>||<plus|1r|0.5fn>|>>>
+  <assign|aligned-item|<macro|name|<style-with|src-compact|none|<with|par-first|<minus|<item-hsep>>|<yes-indent>><resize|<arg|name>|<minus|1r|<minus|<item-hsep>|0.5fn>>||<plus|1r|0.5fn>|>>>>
 
   <\active*>
     <\src-comment>
@@ -139,18 +145,6 @@
   </macro>>
 
   <assign|display-table|<macro|nr|<chapter-prefix><arg|nr>>>
-
-  <\active*>
-    <\src-comment>
-      Page Margin
-    </src-comment>
-  </active*>
-
-  <assign|page-foot-sep|5mm>
-
-  <assign|page-top|2.5cm>
-
-  <assign|page-bot|2.8cm>
 </body>
 
 <\initial>

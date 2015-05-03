@@ -50,9 +50,9 @@
 
   <assign|header-secondary|<macro|>>
 
-  <assign|front-begin|<macro|<set-page-number|1><assign|page-number|<macro|<quote|<number|<page-the-page>|Roman>>>><assign|page-odd-footer|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>><assign|page-even-footer|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>>>>
+  <assign|front-begin|<macro|<style-with|src-compact|none|<set-page-number|1><assign|page-number|<macro|<quote|<number|<page-the-page>|Roman>>>><assign|page-odd-footer|<style-with|src-compact|none|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>>><assign|page-even-footer|<style-with|src-compact|none|<htab|5mm><with|font|roman|font-size|0.9fs|<page-number>><htab|5mm>>>>>>
 
-  <assign|main-begin|<macro|<set-page-number|1><assign|page-number|<macro|<quote|<page-the-page>>>><assign|page-odd-footer|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>><assign|page-even-footer|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>>>
+  <assign|main-begin|<macro|<style-with|src-compact|none|<set-page-number|1><assign|page-number|<macro|<quote|<page-the-page>>>><assign|page-odd-footer|<style-with|src-compact|none|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>><assign|page-even-footer|<style-with|src-compact|none|<htab|5mm><with|font|roman|font-size|0.9fs|-<space|0.2fs><page-number><space|0.2fs>-><space|3fn><htab|5mm>>>>>>
 
   <\active*>
     <\src-comment>

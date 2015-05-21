@@ -40,6 +40,20 @@
 
   <assign|table-of-contents-text|\<#76EE\><space|2fs>\<#5F55\>>
 
+  <assign|chapter-toc|<macro|name|<toc-main-2|\<#7B2C\><space|0.2fs><the-chapter><space|0.2fs>\<#7AE0\><chapter-sep><arg|name>>>>
+
+  <assign|section-toc|<macro|name|<toc-normal-1|<toc-title|section|<arg|name>>>>>
+
+  <assign|toc-dots|<macro|<datoms|<macro|x|<repeat|<arg|x>|<math|\<cdots\>>>>|<htab|5mm>>>>
+
+  <assign|toc-strong-2|<macro|left|right|<with|font|simhei|font-size|1.4fs|<arg|left><toc-dots>><no-break><arg|right>>>
+
+  <assign|toc-1|<macro|left|right|<with|par-left|2fs|font-size|1.2fs|<arg|left><toc-dots>><no-break><arg|right>>>
+
+  <assign|toc-2|<macro|left|right|<with|par-left|4fs|font-size|1.2fs|<arg|left><toc-dots>><no-break><arg|right>>>
+
+  <assign|toc-3|<macro|left|right|<with|par-left|6fs|font-size|1.2fs|<arg|left><toc-dots>><no-break><arg|right>>>
+
   <\active*>
     <\src-comment>
       Page Styles \| Margin, Header, Footer

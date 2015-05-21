@@ -48,11 +48,11 @@
 
   <assign|toc-strong-2|<macro|left|right|<with|font|simhei|font-size|1.4fs|<arg|left><toc-dots>><no-break><arg|right>>>
 
-  <assign|toc-1|<macro|left|right|<with|par-left|2fs|font-size|1.2fs|<arg|left><toc-dots>><no-break><arg|right>>>
+  <assign|toc-1|<macro|left|right|<with|font-size|1.2fs|<space|2fs><arg|left><toc-dots>><no-break><arg|right>>>
 
-  <assign|toc-2|<macro|left|right|<with|par-left|4fs|font-size|1.2fs|<arg|left><toc-dots>><no-break><arg|right>>>
+  <assign|toc-2|<macro|left|right|<with|font-size|1.2fs|<space|4fs><arg|left><toc-dots>><no-break><arg|right>>>
 
-  <assign|toc-3|<macro|left|right|<with|par-left|6fs|font-size|1.2fs|<arg|left><toc-dots>><no-break><arg|right>>>
+  <assign|toc-3|<macro|left|right|<with|font-size|1.2fs|<space|6fs><arg|left><toc-dots>><no-break><arg|right>>>
 
   <\active*>
     <\src-comment>
@@ -156,13 +156,22 @@
 
   <assign|render-big-figure|<\macro|type|name|fig|cap>
     <padded-normal|1fn|1fn|<tabular*|<tformat|<twith|table-width|<value|figure-width>>|<cwith|3|3|1|1|cell-hyphen|t>|<cwith|1|-1|1|-1|cell-lsep|<value|figure-left-padding>>|<cwith|1|-1|1|-1|cell-rsep|<value|figure-right-padding>>|<cwith|2|2|1|1|cell-height|<value|figure-caption-sep>>|<cwith|3|3|1|1|cell-lsep|<value|caption-left-padding>>|<cwith|3|3|1|1|cell-rsep|<value|caption-right-padding>>|<table|<row|<cell|<arg|fig>>>|<row|<cell|>>|<row|<\cell>
-      <compound|<\surround|<figure-name|<arg|name><figure-sep>><list-caption|<arg|type>|<arg|cap>>|>
+      <\surround|<figure-name|<arg|name><figure-sep>><list-caption|<arg|type>|<arg|cap>>|>
         <arg|cap>
-      </surround>>
+      </surround>
     </cell>>>>>>
   </macro>>
 
   <assign|display-table|<macro|nr|<chapter-prefix><arg|nr>>>
+
+  <assign|big-table|<\macro|body|caption>
+    <surround|<next-table>||<padded-normal|1fn|1fn|<tabular*|<tformat|<twith|table-width|<value|figure-width>>|<cwith|1|1|1|1|cell-hyphen|t>|<cwith|1|-1|1|-1|cell-lsep|<value|figure-left-padding>>|<cwith|1|-1|1|-1|cell-rsep|<value|figure-right-padding>>|<cwith|2|2|1|1|cell-height|<value|figure-caption-sep>>|<cwith|1|1|1|1|cell-lsep|<value|caption-left-padding>>|<cwith|1|1|1|1|cell-rsep|<value|caption-right-padding>>|<table|<row|<\cell>
+      <\surround|<figure-name|<table-text>
+      <the-table><figure-sep>><list-caption|<arg|table>|<arg|caption>>|>
+        <arg|caption>
+      </surround>
+    </cell>>|<row|<cell|>>|<row|<cell|<arg|body>>>>>>>>
+  </macro>>
 </body>
 
 <\initial>

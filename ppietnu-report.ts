@@ -100,6 +100,10 @@
 
   <assign|subsection-numbered-title|<macro|title|<style-with|src-compact|none|<subsection-title|<with|font|roman|<the-subsection>><subsection-sep><arg|title>>>>>
 
+  <assign|subsubsection-title|<macro|name|<style-with|src-compact|none|<sectional-normal|<vspace*|0.5fs><with|font|simhei|font-size|1.2fs|<arg|name>><vspace|0.5fs>>>>>
+
+  <assign|subsubsection-numbered-title|<macro|title|<style-with|src-compact|none|<subsubsection-title|<with|font|roman|<the-subsection>><subsection-sep><arg|title>>>>>
+
   <assign|chapter-clean|<macro|<reset-section><reset-equation><reset-figure><reset-table>>>
 
   <\active*>

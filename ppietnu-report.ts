@@ -168,9 +168,9 @@
     <surround|<next-table>||<padded-normal|1fn|1fn|<tabular*|<tformat|<twith|table-width|<value|figure-width>>|<cwith|1|1|1|1|cell-hyphen|t>|<cwith|1|-1|1|-1|cell-lsep|<value|figure-left-padding>>|<cwith|1|-1|1|-1|cell-rsep|<value|figure-right-padding>>|<cwith|2|2|1|1|cell-height|<value|figure-caption-sep>>|<cwith|1|1|1|1|cell-lsep|<value|caption-left-padding>>|<cwith|1|1|1|1|cell-rsep|<value|caption-right-padding>>|<table|<row|<\cell>
       <\surround|<figure-name|<table-text>
       <the-table><figure-sep>><list-caption|<arg|table>|<arg|caption>>|>
-        <arg|caption>
+        <with|font|simhei|font-size|1.2fs|<arg|caption>>
       </surround>
-    </cell>>|<row|<cell|>>|<row|<cell|<arg|body>>>>>>>>
+    </cell>>|<row|<cell|>>|<row|<cell|<with|font-size|1fs|<arg|body>>>>>>>>>
   </macro>>
 </body>
 

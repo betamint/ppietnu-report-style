@@ -144,6 +144,14 @@
 
   <\active*>
     <\src-comment>
+      Content Styles \| Enunciation
+    </src-comment>
+  </active*>
+
+  <assign|render-theorem|<macro|which|body|<render-enunciation|<theorem-name|<arg|which><theorem-sep>>|<arg|body>>>>
+
+  <\active*>
+    <\src-comment>
       Content Styles \| Figure
     </src-comment>
   </active*>

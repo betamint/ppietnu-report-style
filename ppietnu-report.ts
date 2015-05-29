@@ -104,7 +104,13 @@
 
   <assign|subsubsection-numbered-title|<macro|title|<style-with|src-compact|none|<subsubsection-title|<with|font|roman|<the-subsubsection>><subsubsection-sep><arg|title>>>>>
 
+  <assign|appendix-numbered-title|<macro|title|<style-with|src-compact|none|<appendix-title|<appendix-text><with|font|roman|<the-appendix>>>>>>
+
+  <assign|appendix-prefix|<macro|<the-appendix>>>
+
   <assign|chapter-clean|<macro|<reset-section><reset-equation><reset-figure><reset-table>>>
+
+  <assign|appendix-clean|<macro|<style-with|src-compact|none|<reset-section><chapter-clean><assign|chapter-prefix|<appendix-prefix>>>>>
 
   <\active*>
     <\src-comment>
